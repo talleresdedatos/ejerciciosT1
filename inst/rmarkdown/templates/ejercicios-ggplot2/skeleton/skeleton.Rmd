@@ -1,0 +1,114 @@
+---
+title: "Ejercicios con ggplot2"
+output: html_document
+---
+
+## Datos del grupo
+
+- Integrante 1
+- Integrante 2
+- Integrante 3
+- Integrante 4
+
+```{r setup, include=FALSE}
+# no modificar este bloque
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	error = TRUE
+)
+```
+
+
+## Cargando paquetes necesarios
+
+```{r}
+library(ggplot2) # para gráficos
+library(gapminder) # para los datos
+library(dplyr) # para el filtrado
+```
+
+
+## Ejercicio 1
+
+Obtenemos los datos del año 2002.
+
+```{r}
+datos_2002 <- filter(gapminder, year == 2002)
+datos_2002_filtrado <- filter(gapminder, year == 2002, pop < 50000000)
+```
+
+Obtener un gráfico de puntos para ver la relación entre la población y la expectativa de vida en el año 2002. Completa el siguiente bloque de código:
+
+```{r}
+ggplot(datos_2002, aes(___, ___)) +
+  geom_point()
+```
+
+Pregunta: ¿Es posible decir que existe algún tipo de relación entre la población y la expectativa de vida en el año 2002?¿Por qué?
+
+Respuesta: ___
+
+
+## Ejercicio 2
+
+Seguimos usando "datos_2002".
+
+Obtener un gráfico de puntos para ver la relación entre la población y el PBI per cápita. Completa el siguiente bloque de código
+
+```{r}
+ggplot(datos_2002, aes(___, ___)) +
+  geom_point()
+```
+
+Pregunta: ¿Es posible decir que existe algún tipo de relación entre la población y el PBI per cápita en el año 2002?¿Por qué?
+
+Respuesta: ___
+
+
+## Ejercicio 3
+
+¿Qué pasa si solo vemos los países con menos de 50 millones de habitantes? Usa "datos_2002_filtrado" para obtener un diagrama de puntos de la población y la expectativa de vida.
+
+
+```{r}
+ggplot(datos_2002_filtrado, aes(___, ___)) +
+  ___()
+```
+
+Pregunta: En países con menos de 100 millones de habitantes, ¿se ve algún tipo de relación entre ambas variable?¿Por qué?
+
+Respuesta: ___
+
+## Ejercicio 4
+
+¿Qué pasa si solo vemos los países con menos de 50 millones de habitantes? Usa "datos_2002_filtrado" para obtener un diagrama de puntos de la población y el PBI per cápita.
+
+
+```{r}
+ggplot(___, aes(___, ___)) +
+  ___()
+```
+
+Pregunta: En países con menos de 50 millones de habitantes, ¿se ve algún tipo de relación entre ambas variable?¿Por qué?
+
+Respuesta: ___
+
+## Ejercicio 5
+
+Usando "datos_2002_filtrado", elabora un diagrama de puntos que permita ver la relación entre población y PBI per cápita, además de permitir identificar a qué continente corresponde cada país.
+
+```{r}
+ggplot(___, aes(___, ___, color = ___)) +
+  ___()
+```
+
+Pregunta 1: ¿En qué continente se encuentra el país de baja población con alto PBI per cápita? 
+
+Respuesta: 
+
+Pregunta 2: ¿En qué continente se encuentra el país de alta población con alto PBI per cápita? 
+
+Respuesta: 
+
