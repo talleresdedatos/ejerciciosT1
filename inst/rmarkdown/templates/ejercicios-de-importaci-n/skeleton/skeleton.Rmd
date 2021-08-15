@@ -1,0 +1,100 @@
+---
+title: "Ejercicios de importación de datos"
+author: "Tu nombre"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# No modificar este bloque
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+Integrantes del grupo
+
+- Integrante 1
+- Integrante 2
+- Integrante 3
+
+## Cargado de paquetes
+
+Carga los paquetes necesarios para cumplir estas tres tareas:
+
+1. Importar datos en formato CSV (desde archivos de texto)
+2. Importar datos en formato Excel
+3. Generar gráficos usando la gramática de los gráficos
+
+```{r}
+library(___)
+library(___)
+library(___)
+```
+
+## Obtener los conjuntos de datos
+
+Puedes acceder a los conjuntos de datos necesarios para estos ejercicios desde el siguiente enlace: <https://drive.google.com/drive/folders/1ntoxRrmsgTfeXe0PjcvkMJo38NJrm5JT?usp=sharing>
+
+## Ejercicio 1
+
+Importa el conjunto de datos "ranking_scimago_iber.xlsx" y crea el objeto "ranking_scimago" en tu sesión. 
+
+```{r}
+--- <- read_---(---)
+```
+
+Inspecciona el objeto "ranking_scimago" en tu Environment.
+
+- Pregunta: ¿Cuántas observaciones tiene?
+- Respuesta: ---
+- Pregunta: ¿Cuántas variables contiene?
+- Respuesta: ---
+- Pregunta: ¿Cuál es la unidad de observación?
+- Respuesta: ---
+
+## Ejercicio 2
+
+Crea un gráfico que permita mostrar la comparación entre la cantidad de universidades en el ranking de todos los países.
+
+```{r}
+ggplot(___, aes(___, ___)) +
+  ___()
+```
+
+- Pregunta: ¿Cuál es el país con mayor cantidad de universidades en el ranking?
+- Respuesta: ---
+- Pregunta: ¿Cuál es el país con menor cantidad de universidades en el ranking?
+- Respuesta: ---
+
+## Ejercicio 3
+
+Importar "medallas.csv" y crear el objeto "medallas" en tu sesión. 
+
+```{r}
+--- <- read_---(---)
+```
+
+Inspecciona el objeto "medallas" en tu Environment.
+
+- Pregunta: ¿Cuántas observaciones tiene?
+- Respuesta: ---
+- Pregunta: ¿Cuántas variables contiene?
+- Respuesta: ---
+- Pregunta: ¿Cuál es la unidad de observación?
+- Respuesta: ---
+
+## Ejercicio 4
+
+Crea un gráfico que permita comparar la cantidad de medallas de cada tipo que ha ganado cada continente. 
+
+```{r}
+ggplot(___, aes(___, ___, fill = ___)) +
+  ___()
+```
+
+- Pregunta: ¿Cuál es el continente con mayor cantidad de medallas ganadas?
+- Respuesta: ---
+- Pregunta: ¿Cuál es el continente con menor cantidad de medallas ganadas?
+- Respuesta: ---
