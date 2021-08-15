@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2021 ejerciciosT1 authors
+Copyright (c) 2021 Samuel Calderon Serrano
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
