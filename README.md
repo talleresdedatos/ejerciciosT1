@@ -11,26 +11,26 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/ejerciciosT1)](https://CRAN.R-project.org/package=ejerciciosT1)
 <!-- badges: end -->
 
-The goal of ejerciciosT1 is to …
+El objetivo de `ejerciciosT1` es proveer un conjunto de ejercicios que
+sirvan para complementar las actividades desarrolladas en el Taller I de
+Elaboración de Productos de datos: R Markdown.
 
-## Installation
+## Instalación
 
-You can install the released version of ejerciciosT1 from
-[CRAN](https://CRAN.R-project.org) with:
+Puedes instalar la versión más reciente de `ejerciciosT1` desde el
+r-universe de *talleresdedatos* con:
 
 ``` r
-install.packages("ejerciciosT1")
+install.packages("ejerciciosT1", repos = 'https://talleresdedatos.r-universe.dev')
 ```
+
+O desde el repositorio en Github con:
 
 ``` r
 remotes::install_github("talleresdedatos/ejerciciosT1")
 ```
 
-## Example
+## Usar una plantilla de ejercicios
 
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(ejerciciosT1)
-## basic example code
-```
+Para usar una plantilla de ejercicios crea un nuevo archivo R Markdown
+seleccionando la plantilla correspondiente.

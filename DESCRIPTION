@@ -1,13 +1,13 @@
 Package: ejerciciosT1
-Title: What the Package Does (One Line, Title Case)
+Title: Ejercicios para el Taller I de Elaboración de productos de datos
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Samuel",
+           family = "Calderon Serrano",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "samuel.calderon@uarm.pe")
+Description: Contiene plantillas R Markdown con ejercicios para completar bloques de código
+    para practicar lo aprendido en el Taller I de Elaboración de productos de datos.
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
